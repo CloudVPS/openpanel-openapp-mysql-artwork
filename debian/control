@@ -1,0 +1,12 @@
+Source: openpanel-openapp-mysql-artwork
+Section: misc
+Priority: optional
+Maintainer: OpenPanel packager <packages@openpanel.com>
+Build-Depends: debhelper (>= 5), openpanel-dev, imagemagick
+Standards-Version: 3.7.2
+
+Package: openpanel-openapp-mysql-artwork
+Architecture: all
+Pre-Depends: openpanel-core
+Description: Artwork for Openapp Mysql
+ Artwork for Openapp Mysql
