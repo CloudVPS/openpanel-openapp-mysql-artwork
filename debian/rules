@@ -15,12 +15,10 @@ install:
 	rm -rf ${BUILD_ROOT}
 	mkdir -p ${BUILD_ROOT}/var/openpanel/wallpaper
 	mkdir -p ${BUILD_ROOT}/var/openpanel/http/images
-	cp *.png ${BUILD_ROOT}/var/openpanel/modules/OpenAppMysql.module/
-	mv ${BUILD_ROOT}/var/openpanel/modules/OpenAppMysql.module/logo.png ${BUILD_ROOT}/var/openpanel/http/images/OpenPanelLogo.png
+	cp logo.png ${BUILD_ROOT}/var/openpanel/http/images/OpenPanelLogo.png
 	cp wallpaper.jpg ${BUILD_ROOT}/var/openpanel/wallpaper/default.jpg
 
 build:
-	convert -modulate 50,100,100 mysql.png down_mysql.png
 	convert wallpaper.png wallpaper.jpg
 binary-indep:
 
